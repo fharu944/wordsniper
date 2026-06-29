@@ -250,6 +250,134 @@ function showMessage(text,color){
 
 }
 
+#createScreen{
+
+    background:white;
+
+    width:420px;
+
+    margin:auto;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+#createScreen h2{
+
+    font-size:40px;
+
+    color:#2e7d32;
+
+}
+
+#createScreen p{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+#createScreen input{
+
+    width:90%;
+
+    padding:15px;
+
+    font-size:22px;
+
+    border-radius:15px;
+
+    border:2px solid #4CAF50;
+
+    text-align:center;
+
+}
+
+#roomNumber{
+
+    width:90%;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:#f0fff0;
+
+    font-size:45px;
+
+    font-weight:bold;
+
+    color:#2e7d32;
+
+    text-align:center;
+
+    border:3px solid #4CAF50;
+
+}
+
+.roomText{
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+.greenBtn{
+
+    width:90%;
+
+    padding:18px;
+
+    font-size:25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.grayBtn{
+
+    width:90%;
+
+    padding:18px;
+
+    font-size:25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#9e9e9e;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
 
 </script>
 
