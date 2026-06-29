@@ -40,6 +40,38 @@
         参加
     </button>
 
+<div id="createScreen" style="display:none;">
+
+    <h2>ルーム作成</h2>
+
+    <p>あなたの名前</p>
+
+    <input
+        type="text"
+        id="playerNameInput"
+        placeholder="名前を入力">
+
+    <p>ルーム番号</p>
+
+    <div id="roomNumber">
+        483291
+    </div>
+
+    <p class="roomText">
+        相手にこの番号を教えてください
+    </p>
+
+    <button class="greenBtn">
+        ゲーム開始
+    </button>
+
+    <button class="grayBtn"
+            onclick="backStart()">
+        戻る
+    </button>
+
+</div>
+    
 </div>
 
 <div class="container" id="gameScreen" style="display:none;">
@@ -123,7 +155,9 @@ async function startGame(){
 
 function createRoom(){
 
-    alert("ルーム作成画面へ");
+    document.getElementById("startScreen").style.display="none";
+
+    document.getElementById("createScreen").style.display="flex";
 }
 
 function joinRoom(){
@@ -132,6 +166,14 @@ function joinRoom(){
 
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("joinScreen").style.display = "block";
+}
+
+function backStart(){
+
+    document.getElementById("createScreen").style.display="none";
+
+    document.getElementById("startScreen").style.display="flex";
+
 }
 
 function showRules(){
